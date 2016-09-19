@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MakalelerController@index');
+Route::post('/', 'MakalelerController@kaydet');
+
+
+
